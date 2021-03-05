@@ -1,0 +1,265 @@
+Database:
+   Tipo: SQLITE #Tipos: MYSQL, SQLITE, MYSQL_FAST
+   IP: localhost:3306
+   DB: test
+   User: admin
+   Pass: ''
+   Debug: true
+
+Melhorias:
+   Delay:
+      Preco: 10.0
+      Porcentagem acrescida: 30.0
+      Segundos por level: 1
+      Max: 3
+      Default: 1
+   Drop bonus:
+      Preco: 10.0
+      Porcentagem acrescida: 30.0
+      Porcentagem por level: 5.0
+      Max: 3
+      Default: 0.0
+   Bonus de venda:
+      Preco: 10.0
+      Porcentagem acrescida: 30.0
+      Porcentagem por level: 5.0
+      Max: 3
+      Default: 0.0
+
+Armazem:
+   Ativar: true
+   Venda: true
+   Coleta: true      
+   
+Gerar:
+   Offline: true
+   Chunk descarregada: true
+   Raio: 5
+   Nome: '&7{quantia}x &c{mob}'
+   
+XP multiplicar: false #multiplicar o xp com a quantidade de mobs
+MobStack max: 0 #deixe 0 para infinito
+Variacao: false
+Fixo: true #caso esteja ativado, sera (drops x mobs x looting)
+Shift unitario: true #ao matar com shift, ira matar apenas 1
+   
+Limite:
+   Default: 1
+   Max: 100 #deixe 0 para ser infinito
+   Ativar: true
+   Item:
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&bLimite de compra'
+      Lore:
+      - ''
+      - '&fQuantia: &a{quantia}'
+      - ''
+      - '&7Clique com botão direito para ativar.'
+      - ''
+      - '&7Clique com shift + botão direito para compactar'
+      - '&7todos os seus limites no inventário em 1 só.'
+      - ''
+   
+Limite spawners:
+   Default: 1
+   Max: 100 #deixe 0 para ser infinito
+   Ativar: true
+   Item:
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&bLimite de spawners'
+      Lore:
+      - ''
+      - '&fQuantia: &a{quantia}'
+      - ''
+      - '&7Clique com botão direito para ativar.'
+      - ''
+      - '&7Clique com shift + botão direito para compactar'
+      - '&7todos os seus limites no inventário em 1 só.'
+      - ''
+   
+Limite drops:
+   Default: 1
+   Max: 100 #deixe 0 para ser infinito
+   Ativar: true
+   Item:
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '&bLimite de drops'
+      Lore:
+      - ''
+      - '&fQuantia: &a{quantia}'
+      - ''
+      - '&7Clique com botão direito para ativar.'
+      - ''
+      - '&7Clique com shift + botão direito para compactar'
+      - '&7todos os seus limites no inventário em 1 só.'
+      - ''
+   
+Matadora:
+   Usar: true
+   Item:
+      CustomSkull: false
+      URL: ''
+      ID: 276
+      Data: 0
+      Glow: true
+      Name: '&bEspada matadora'
+      Lore:
+      - ''
+      - '&7Use para matar os mobs spawnados.'
+      - '&7Clique com shift+botão direito para abrir a evolução.'
+   Default:
+      Looting: 1
+      Sortudo: 0
+      Dano: 1
+   Precos:
+      Acrescimo: 20.0 #acrescimo do valor para cada nivel
+      Looting: 20
+      Sortudo: 20
+      Dano: 20
+   Maximo:
+      Looting: 3
+      Sortudo: 5
+      Dano: 10
+   Atributos por level:
+      Looting: 10.0 #recomendo deixar assim para um calculo mais proximo do vanilla
+      Sortudo: 5.0
+      Dano: 1
+   
+Interacao:
+   Ativar: true
+   Mensagem:
+   - ''
+   - '&cTipo do mob: &7{mob}'
+   - '&cXP de evolução dropável: &7{xp}'
+   - '&cSpawnado por: &7{spawner}'
+   - '&cDono do spawner: &7{dono}'
+   - '&cQuantidade stackada: &7{quantidade}'
+   - ''
+      
+Mensagens:
+   Nao tem money: '&cDesculpe, mas você não possui a quantia necessária de money, &7{money} money&c.'
+   Comprou spawner: '&aObrigado pela sua compra, você adquiriu {quantia}x &7Spawner ( {spawner} &7)&a com sucesso.'
+   Comprou melhoria: '&aVocê adquiriu esta melhoria com sucesso.'
+   Nao e numero: '&cO argumento não é um número.'
+   Cancelou: '&cVocê cancelou a compra.'
+   Local nao setado: '&cO local de spawn deste spawner não foi setado.'
+   Local setado: '&aVocê setou o local de spawn deste spawner.'
+   Local removido: '&aVocê removeu o local de spawn deste spawner.'
+   Nao pode vender: '&cA venda foi bloqueada.'
+   Nao pode coletar: '&cA coleta foi bloqueada.'
+   Vendeu: '&aVocê vendeu &7{quantia}x {item} &apor &7{preco}&a.'
+   Inv cheio: '&cSeu inventário está cheio.'
+   XP insuficiente: '&cVocê não possui xp suficiente para isso.'
+   Limite insuficiente: '&cVocê não possui limite suficiente. Disponível: &7{limite}&c.'
+   Nao encontrado: '&cJogador não encontrado.'
+   Nao e numero: '&cO argumento não é um número.'
+   Deu: '&aVocê deu &e{quantia} &ade limite para o jogador &e{player}&a.'
+   Converteu: '&cVocê compactou todos seus limites em 1.'
+   Ativou: '&aVocê ativou &e{quantia} &ade limites.'
+   Espada: '&cVocê necessita da espada matadora para isto.'
+   Armazenou: '&aVocê armazenou &7{quantia}x &aspawners de &7( {spawner} )&a.'
+   Deu spawner: '&aVocê deu &7{quantia}x &aspawner(s) de &7( {spawner} ) &apara o jogador &7{player}&a.'
+   Quantia insuficiente: '&cVocê não tem spawners suficiente.'
+   Recolheu: '&aVocê recolheu &7{quantia}x &aspawners de &7( {spawner} )&a.'
+   Max limite: '&cVocê já chegou no máximo.'
+   Digite:
+   - ''
+   - '&aDigite a quantia de spawners que deseja.'
+   - '&7para cancelar digite &ncancelar&7.'
+   - ''
+      
+Sons:
+   Usar: true
+   Comprar melhoria: 'LEVEL_UP'
+   Comprar spawner: 'VILLAGER_YES'
+   
+Setas:
+   Voltar:
+      CustomSkull: false
+      URL: ''
+      ID: 262
+      Data: 0
+      Glow: true
+      Name: '&cVoltar'
+      Lore:
+      - ''
+      - '&7Clique para voltar.'
+      - ''
+   Proximo:
+      CustomSkull: false
+      URL: ''
+      ID: 262
+      Data: 0
+      Glow: true
+      Name: '&aPróximo'
+      Lore:
+      - ''
+      - '&7Clique para ir à próxima página.'
+      - ''
+      
+Items:
+   Nao pode:
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '{spawner}'
+      Lore:
+      - ''
+      - '&cVocê não pode comprar este spawner.'
+      - '&7Ele será liberado em: &f{data} - &f{hora}'
+      - ''
+   Permissao:
+      CustomSkull: true
+      URL: 'http://textures.minecraft.net/texture/5fde3bfce2d8cb724de8556e5ec21b7f15f584684ab785214add164be7624b'
+      ID: 0
+      Data: 0
+      Glow: true
+      Name: '{spawner}'
+      Lore:
+      - ''
+      - '&cVocê não pode comprar este spawner.'
+      - '&7Você não possui permissão.'
+      - ''
+      
+Lores:
+   Lore comprar:
+   - ''
+   - '&fEntidade: &a{entidade}'
+   - '&fDelay de spawn: &a{delay}s'
+   - '&fPreço: &a{preco} &7(&e-{desconto}%&7)'
+   - ''
+   - '&7Clique com o botão esquerdo para comprar.'
+   - ''
+   Lore ativar:
+   - ''
+   - '&fEntidade: &c{entidade}'
+   - '&fDelay de spawn: &a{delay}s'
+   - '&fQuantidade: &a{quantidade}'
+   - ''
+   - '&7Clique com o botão direito para armazenar.'
+   - ''
+   
+Formats:
+ - ''
+ - ''
+ - 'K'
+ - 'M'
+ - 'B'
+ 
+Formatador:
+   B true: '&aSim'
+   B false: '&cNão'

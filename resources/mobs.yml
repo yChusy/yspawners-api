@@ -1,0 +1,5 @@
+Mobs:
+   CREEPER:
+      Drop: '289:0'
+      XP: 20
+      Quantia: 1 #deixa 0 para ser a random do minecraft

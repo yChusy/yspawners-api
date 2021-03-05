@@ -1,0 +1,9 @@
+name: ySpawners
+authors: [yChusy]
+version: 1.2.8-STABLE
+main: com.ystoreplugins.yspawners.Main
+depend: [Vault]
+softdepend: [PlaceholderAPI, PlotSquared, AtlasEconomy]
+commands:
+   spawners:
+      aliases: [spawner, gerador, geradores]

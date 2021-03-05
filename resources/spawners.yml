@@ -1,0 +1,51 @@
+Spawners:
+   1:
+      Item:
+         CustomSkull: false
+         URL: ''
+         ID: 383
+         Data: 50
+         Glow: true
+         Name: '&aSpawner de Creeper'
+         Lore:
+         - ''
+         - '&fAtivo: {ativo}'
+         - '&fQuantidade: &b{quantia}'
+         - '&fTempo de spawn: &a{tempo} &e-{tempoplayer}s'
+         - ''
+         - '&7Clique com o botão esquerdo para ativar/desativar.'
+         - '&7Clique com o botão direito para setar o local de spawn.'
+         - '&7Clique com o scroll para remover o local de spawn.'
+         - '&7Clique com shift+botão esquerdo para recolher.'
+         - ''
+      Delay de spawn: 5 #em segundos
+      Tipo: 'CREEPER'
+      Libera em: '01/01/2020-10:00'
+      Comprar:
+         Preco: 100.0
+         Permissao: 'yspawners.creeper'
+   2:
+      Item:
+         CustomSkull: false
+         URL: ''
+         ID: 383
+         Data: 54
+         Glow: true
+         Name: '&aSpawner de Zumbi'
+         Lore:
+         - ''
+         - '&fAtivo: {ativo}'
+         - '&fQuantidade: &b{quantia}'
+         - '&fTempo de spawn: &a{tempo} &e-{tempoplayer}s'
+         - ''
+         - '&7Clique com o botão esquerdo para ativar/desativar.'
+         - '&7Clique com o botão direito para setar o local de spawn.'
+         - '&7Clique com o scroll para remover o local de spawn.'
+         - '&7Clique com shift+botão esquerdo para recolher.'
+         - ''
+      Delay de spawn: 10 #em segundos
+      Tipo: 'ZOMBIE'
+      Libera em: '16/10/2020-10:00'
+      Comprar:
+         Preco: 110.0
+         Permissao: 'yspawners.zumbi'
